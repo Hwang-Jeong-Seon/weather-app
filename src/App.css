@@ -1,38 +1,71 @@
-.App {
-  text-align: center;
+body{
+  background: url("https://png.pngtree.com/background/20210711/original/pngtree-hand-drawn-blue-sky-white-clouds-weather-forecast-illustration-background-picture-image_1137685.jpg");
+  width : 100%;
+  height : 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.App{
+  width: 100%;
+  height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  gap: 2rem;
 }
 
-.App-link {
-  color: #61dafb;
+.card{
+  background-color: rgba(0, 0, 0, 0.2);
+  width : 600px;
+  height : 300px;
+  border-radius: 20px;
+  border : 2px solid gainsboro;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.card > h1 {
+  font-size: 1.3rem;
+  color : black;
+}
+.card > strong {
+  font-size: 3rem;
+  color : forestgreen;
+}
+.card > p {
+  font-size: 2rem;
+  font-weight: 600;
+  color : dodgerblue;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.button{
+  cursor: pointer;
+  padding: 0.5rem 1.3rem;
+  background-color: orange;
+  border:1px solid orange ;
+  color : black;
+  border-radius: 3px;
+}
+.button:hover{
+  transition: all 0.3s ease-in-out;
+  border-color: #7a7a7a;
+  color : #f6e5c5;
+}
+.button:active,
+.button.active{
+  background-color: transparent;
+  color : orange;
+  border-color: orange;
+}
+
+.ButtonWrap{
+  width: 570px;
+  display: flex;
+justify-content: space-between;
+  padding : 1.5rem 3rem;
+  border-radius: 500px;
+  background-color: black;
 }
